@@ -2,7 +2,6 @@
 //
 
 #include "stdafx.h"
-#include "math.h"
 #include <locale.h>
 #include "conio.h"
 #include <clocale>
@@ -27,7 +26,7 @@ void output(int stroka, int stolb, float **massiv)//вывод массива на экран
 
 }
 
-float work(int stroka, int stolb, float **massiv) //сортировка массива
+float work(int stroka, int stolb, float **massiv) //massive's sorting
 {
 	float x;
 	printf("\n Начинаю сортировку... \n");
@@ -51,7 +50,7 @@ float work(int stroka, int stolb, float **massiv) //сортировка массива
 
 
 
-float random_massiv(int stroka, int stolb, float **massiv)//заполнение массива случайными числами
+float random_massiv(int stroka, int stolb, float **massiv)//filling in massive with random numbers
 {
 
 	srand(time(NULL));
@@ -68,7 +67,7 @@ float random_massiv(int stroka, int stolb, float **massiv)//заполнение массива с
 	return **massiv;
 }
 
-float write_massiv(int stroka, int stolb, float **massiv)//заполнение массива вручную
+float write_massiv(int stroka, int stolb, float **massiv)//filling in massive by hands
 {
 	float element;
 	for (int i = 0; i < stroka; i++)
@@ -85,7 +84,7 @@ float write_massiv(int stroka, int stolb, float **massiv)//заполнение массива вр
 	return **massiv;
 }
 
-void menu()//меню пользователя
+void menu()//user's menu
 {
 	int int_m, int_m1, stroka = 0, stolb = 0;
 	float **massiv = NULL;
@@ -195,7 +194,7 @@ void menu()//меню пользователя
 
 
 
-int _tmain(int argc, _TCHAR* argv[])//вызывает функцию с меню
+int _tmain(int argc, _TCHAR* argv[])//it calls function with menu
 {
 	setlocale(LC_ALL, "Russian");
 	setlocale(LC_ALL, "ru");
